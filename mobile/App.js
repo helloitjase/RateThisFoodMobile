@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import styled from 'styled-components/native';
+import MainReviewPage from './src/reviewPage/mainReviewPage.js';
 
 const AppView = styled.View`
 flex: 1;
 align-items: center;
 justify-content: center;
-background-color: blue;
 `;
 
 const AppText = styled.Text`
@@ -19,9 +19,8 @@ export default function App() {
 
   return (
     <AppView>
-      <AppText>Helo world</AppText>
-      <AppButton title={test} onPress={() => setTest(test + 1)} />
+      <AppText>Rate This Food</AppText>
+      <MainReviewPage />
     </AppView>
-
   );
 }
